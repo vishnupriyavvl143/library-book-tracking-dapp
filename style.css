@@ -1,0 +1,103 @@
+css
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f1f5f9;
+    color: #1e293b;
+}
+
+header {
+    background: #173b63;
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+}
+
+header h1 {
+    margin-top: 0;
+}
+
+main {
+    max-width: 850px;
+    margin: 30px auto;
+    padding: 0 15px;
+}
+
+.card {
+    background: white;
+    padding: 24px;
+    margin-bottom: 24px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px #00000012;
+}
+
+label {
+    display: block;
+    margin-top: 14px;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+button {
+    margin-top: 15px;
+    padding: 12px 18px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+button:hover {
+    background: #1d4ed8;
+}
+
+button:disabled {
+    background: #94a3b8;
+    cursor: not-allowed;
+}
+
+#connectBtn {
+    background: #0f9d75;
+}
+
+.book {
+    border: 1px solid #dbe3ec;
+    padding: 16px;
+    margin-top: 14px;
+    border-radius: 8px;
+    overflow-wrap: anywhere;
+}
+
+.available {
+    color: #15803d;
+    font-weight: bold;
+}
+
+.unavailable {
+    color: #b91c1c;
+    font-weight: bold;
+}
+
+#message {
+    overflow-wrap: anywhere;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #64748b;
+}

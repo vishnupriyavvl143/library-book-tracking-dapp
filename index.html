@@ -1,0 +1,50 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Book Tracking DApp</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ethers/6.13.5/ethers.umd.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>📚 Library Book Tracking</h1>
+        <p>A Blockchain-Based Library Management System</p>
+        <button id="connectBtn">Connect MetaMask</button>
+        <p id="walletStatus">Wallet not connected</p>
+        <p id="networkStatus">Network: Not checked</p>
+    </header>
+
+    <main>
+        <section class="card">
+            <h2>Add a New Book</h2>
+            <form id="bookForm">
+                <label for="title">Book Title</label>
+                <input id="title" type="text" placeholder="Enter book title" required>
+
+                <label for="author">Author Name</label>
+                <input id="author" type="text" placeholder="Enter author name" required>
+
+                <button type="submit">Add Book to Blockchain</button>
+            </form>
+            <p id="message"></p>
+        </section>
+
+        <section class="card">
+            <h2>Library Books</h2>
+            <button id="refreshBtn">Refresh Book List</button>
+            <p id="bookCount">Total books: —</p>
+            <div id="bookList">Connect MetaMask and refresh to view books.</div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Library Book Tracking DApp | Ethereum Sepolia Test Network</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
+```
