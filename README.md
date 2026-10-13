@@ -59,6 +59,23 @@ Library Book Tracking DApp is a simple decentralized application (DApp) develope
 8. Click the wallet connection button and approve the connection in MetaMask.
 9. Add books and update their availability.
 
+## 6. Steps to Deploy the Smart Contract
+
+1. Open [Remix IDE](https://remix.ethereum.org/).
+2. Create a new Solidity file named `LibraryBookTracker.sol`.
+3. Copy the smart contract code from this repository into the file.
+4. Compile the contract using Solidity compiler version `0.8.20` or a compatible version.
+5. Install and open the MetaMask browser extension.
+6. Select the **Sepolia Test Network** in MetaMask and ensure the wallet has Sepolia test ETH for transaction fees.
+7. In Remix, open the **Deploy & Run Transactions** panel.
+8. Select **Injected Provider - MetaMask** as the environment and approve the wallet connection.
+9. Verify that the selected network is Sepolia.
+10. Select `LibraryBookTracker` from the contract dropdown and click **Deploy**.
+11. Confirm the deployment transaction in MetaMask.
+12. After deployment, copy the contract address and use it in the frontend JavaScript file (`app.js`).
+
+**Note:** The contract address in this repository refers to the deployed instance used for this project. If you deploy a new instance, update the address in `app.js` and `README.md` accordingly.
+
 ## 7. How It Works
 
 The user connects a MetaMask wallet to the website. The frontend communicates with the deployed Solidity smart contract. Users can add books, view stored book details, and update whether a book is available. Blockchain transactions may require Sepolia test ETH.
